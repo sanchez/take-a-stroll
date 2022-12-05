@@ -8,12 +8,26 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "CanvasLayer",
+"class": &"PankuImpl",
+"language": &"GDScript",
+"path": "res://addons/panku_console/components/panku_impl.gd"
+}]
+_global_script_class_icons={
+"PankuImpl": ""
+}
+
 [application]
 
 config/name="take a stroll"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Panku="*res://addons/panku_console/panku.tscn"
 
 [display]
 
@@ -22,7 +36,7 @@ window/stretch/scale=2.0
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/procedural_level_designer/plugin.cfg")
+enabled=PackedStringArray("res://addons/procedural_level_designer/plugin.cfg", "res://addons/panku_console/plugin.cfg")
 
 [importer_defaults]
 
