@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd0uhsl3ji7l4"]
+
+[ext_resource type="PackedScene" uid="uid://cgrypxv7ek4nh" path="res://addons/procedural_level_designer/components/Door/Door.tscn" id="2_oys2n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxnmr"]
+size = Vector2(26, 6)
+
+[node name="LevelDoor" type="Node2D"]
+
+[node name="Door" parent="." instance=ExtResource("2_oys2n")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+shape = SubResource("RectangleShape2D_fxnmr")

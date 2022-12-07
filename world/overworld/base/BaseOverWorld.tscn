@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://15d4s0g68xco"]
+[gd_scene load_steps=6 format=3 uid="uid://15d4s0g68xco"]
 
 [ext_resource type="Texture2D" uid="uid://dj7b7ctclimiw" path="res://assets/tilemap.png" id="1_v2tee"]
+[ext_resource type="PackedScene" uid="uid://cd0uhsl3ji7l4" path="res://components/LevelDoor/LevelDoor.tscn" id="2_h0yth"]
+[ext_resource type="PackedScene" uid="uid://8golpmbj5giu" path="res://components/Player/Player.tscn" id="3_bs85w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4srx"]
 resource_name = "TileMap"
@@ -158,3 +160,20 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array()
+
+[node name="LevelDoor" parent="." instance=ExtResource("2_h0yth")]
+position = Vector2(176, 373)
+
+[node name="LevelDoor2" parent="." instance=ExtResource("2_h0yth")]
+position = Vector2(177, -25)
+
+[node name="LevelDoor3" parent="." instance=ExtResource("2_h0yth")]
+position = Vector2(-28, 176)
+rotation = 1.57079
+
+[node name="LevelDoor4" parent="." instance=ExtResource("2_h0yth")]
+position = Vector2(381, 176)
+rotation = 1.57079
+
+[node name="Player" parent="." instance=ExtResource("3_bs85w")]
+position = Vector2(153, 171)

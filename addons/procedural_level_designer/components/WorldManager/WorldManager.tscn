@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b46b0kl47l4uk"]
+
+[ext_resource type="Script" path="res://addons/procedural_level_designer/components/WorldManager/WorldManager.gd" id="1_wor3d"]
+
+[node name="WorldManager" type="Node2D"]
+script = ExtResource("1_wor3d")

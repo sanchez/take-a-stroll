@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgrypxv7ek4nh"]
+
+[ext_resource type="Script" path="res://addons/procedural_level_designer/components/Door/Door.gd" id="1_mpixe"]
+
+[node name="Door" type="Area2D"]
+collision_layer = 256
+collision_mask = 256
+script = ExtResource("1_mpixe")
+
+[connection signal="area_entered" from="." to="." method="_on_entered"]
+[connection signal="body_entered" from="." to="." method="_on_entered"]
