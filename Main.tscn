@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://8qatq8f43u54"]
+[gd_scene load_steps=4 format=3 uid="uid://8qatq8f43u54"]
 
 [ext_resource type="PackedScene" uid="uid://15d4s0g68xco" path="res://world/overworld/base/BaseOverWorld.tscn" id="1_8xb04"]
+[ext_resource type="PackedScene" uid="uid://b46b0kl47l4uk" path="res://addons/procedural_level_designer/components/WorldManager/WorldManager.tscn" id="1_rdxxp"]
+[ext_resource type="PackedScene" uid="uid://8golpmbj5giu" path="res://components/Player/Player.tscn" id="3_ojeav"]
 
 [node name="Main" type="Node2D"]
 
-[node name="BaseOverWorld" parent="." instance=ExtResource("1_8xb04")]
+[node name="WorldManager" parent="." instance=ExtResource("1_rdxxp")]
+
+[node name="BaseOverWorld" parent="WorldManager" instance=ExtResource("1_8xb04")]
+
+[node name="Player" parent="WorldManager" instance=ExtResource("3_ojeav")]

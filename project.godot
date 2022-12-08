@@ -9,6 +9,11 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Object",
+"class": &"ConfigLevel",
+"language": &"GDScript",
+"path": "res://addons/procedural_level_designer/components/WorldManager/ConfigLevel.gd"
+}, {
 "base": "Area2D",
 "class": &"Door",
 "language": &"GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[{
 "path": "res://addons/procedural_level_designer/components/WorldManager/WorldManager.gd"
 }]
 _global_script_class_icons={
+"ConfigLevel": "",
 "Door": "",
 "PankuImpl": "",
 "WorldManager": ""

@@ -1,0 +1,5 @@
+# hello world
+
+Level:
+Name: Starting
+Path: res://world/overworld/base/BaseOverWorld.tscn
